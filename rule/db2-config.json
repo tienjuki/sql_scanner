@@ -1,0 +1,7 @@
+[
+  {"pattern":"jdbc:db2:","review":"DB2 JDBC URL -> review PostgreSQL JDBC URL"},
+  {"pattern":"com\\.ibm\\.db2","review":"DB2 JDBC driver -> review PostgreSQL driver"},
+  {"pattern":"driverClassName\\s*[:=].*db2","review":"Spring driverClassName points to DB2"},
+  {"pattern":"(url|jdbc-url)\\s*[:=].*db2","review":"Spring datasource URL points to DB2"},
+  {"pattern":"currentSchema\\s*[:=]","review":"DB2 schema setting -> review PostgreSQL schema/search_path"}
+]

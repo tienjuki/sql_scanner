@@ -1,0 +1,6 @@
+[
+  {"pattern":"\\bFETCH\\s+FIRST\\s+\\d+\\s+ROWS?\\s+ONLY\\b","review":"FETCH FIRST -> review LIMIT"},
+  {"pattern":"\\bWITH\\s+UR\\b","review":"WITH UR -> PostgreSQL has no direct equivalent"},
+  {"pattern":"\\bNEXT\\s+VALUE\\s+FOR\\b","review":"NEXT VALUE FOR -> review nextval"},
+  {"pattern":"\\bCURRENT\\s+(DATE|TIME|TIMESTAMP)\\b","review":"CURRENT DATE/TIME -> review cast semantics"}
+]

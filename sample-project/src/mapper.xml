@@ -1,0 +1,5 @@
+<mapper namespace="demo.ExampleMapper">
+  <select id="findById">
+    SELECT ID, NAME FROM CUSTOMER WHERE ID = #{id} WITH UR
+  </select>
+</mapper>

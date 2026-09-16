@@ -1,0 +1,8 @@
+[
+  {"pattern":"\\bVARCHAR_FORMAT\\s*\\(","review":"VARCHAR_FORMAT -> review to_char"},
+  {"pattern":"\\bTIMESTAMP_FORMAT\\s*\\(","review":"TIMESTAMP_FORMAT -> review to_timestamp"},
+  {"pattern":"\\bDAYS\\s*\\(","review":"DAYS() -> review date arithmetic"},
+  {"pattern":"\\bDIGITS\\s*\\(","review":"DIGITS() -> review to_char/lpad"},
+  {"pattern":"\\bDECFLOAT\\s*\\(","review":"DECFLOAT -> review PostgreSQL numeric"},
+  {"pattern":"\\bIDENTITY_VAL_LOCAL\\s*\\(\\s*\\)","review":"IDENTITY_VAL_LOCAL -> review RETURNING/currval"}
+]
